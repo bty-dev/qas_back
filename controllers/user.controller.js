@@ -2,8 +2,8 @@ const users = [{
     id: 1,
     name: "bty",
     password: "bty",
-    projects: 4,
-    deployedProjects: 2
+    projects: 0,
+    deployedProjects: 0
 }]
 
 export const loginUser = (req, res) => {
@@ -12,7 +12,7 @@ export const loginUser = (req, res) => {
         password
     } = req.body;
 
-    if (login === "admin" && password === "admin") {
+    if (login === "bty" && password === "bty") {
         res.status(200).json("Success authorization!");
         return;
     }
